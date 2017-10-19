@@ -32,7 +32,7 @@
                 return false;
             }
 
-            if (this.Key == other.Key)
+            if (this.Key == other.Key) 
             {
                 return true;
             }
