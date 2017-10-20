@@ -4,6 +4,5 @@
 
     public class InMemoryQueueOptions : QueueOptions
     {
-        public string QueueName { get; set; }
     }
 }

@@ -15,7 +15,7 @@
         {
         }
 
-        protected override InMemory BuildQueueInternal(string queueName, AzureStorageQueueOptions queueOptions)
+        protected override IEventQueuer BuildQueueInternal(string queueName, AzureStorageQueueOptions queueOptions)
         {
             return new AzureStorageEventQueuer(queueOptions);
         }

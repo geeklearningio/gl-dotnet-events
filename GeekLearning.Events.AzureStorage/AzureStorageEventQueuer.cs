@@ -34,10 +34,10 @@
 
         public async Task CommitAsync()
         {
-            await this.storageAccount.EnsureAuthorizationsQueueIsCreatedAsync(queueOptions.QueueName);
+            await this.storageAccount.EnsureAuthorizationsQueueIsCreatedAsync(queueOptions.Name);
 
             CloudQueueClient queueClient = this.storageAccount.CreateCloudQueueClient();
-            CloudQueue cloudQueue = queueClient.GetQueueReference(this.queueOptions.QueueName);
+            CloudQueue cloudQueue = queueClient.GetQueueReference(this.queueOptions.Name);
 
             List<Task> addMessagesTaskList = new List<Task>();
             foreach (EventBase Event in this.queue)

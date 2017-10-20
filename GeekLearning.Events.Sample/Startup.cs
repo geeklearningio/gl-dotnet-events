@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using GeekLearning.Events.InMemory;
+using GeekLearning.Events.AzureStorage;
 
 namespace GeekLearning.Events.Sample
 {
@@ -31,7 +32,8 @@ namespace GeekLearning.Events.Sample
             // Add framework services.
             services.AddMvc();
             services.AddEvent(this.Configuration.GetSection("Event"))
-                .AddInMemoryQueue();
+                .AddInMemoryQueue()
+                .AddAzureStorageQueue();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

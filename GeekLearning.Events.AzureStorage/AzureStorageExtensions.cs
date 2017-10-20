@@ -11,7 +11,8 @@
         public static IServiceCollection AddAzureStorageQueue(this IServiceCollection services)
         {
             return services
-                .AddScoped<IConfigureOptions<AzureStorageParsedOptions>, ConfigureProviderOptions<AzureStorageParsedOptions, AzureStorageProviderInstanceOptions, AzureStorageQueueOptions>>();
+                .AddScoped<IConfigureOptions<AzureStorageParsedOptions>, ConfigureProviderOptions<AzureStorageParsedOptions, AzureStorageProviderInstanceOptions, AzureStorageQueueOptions>>()
+                .AddAzureStorageServices();
         }
 
         public static IServiceCollection AddAzureStorageServices(this IServiceCollection services)
