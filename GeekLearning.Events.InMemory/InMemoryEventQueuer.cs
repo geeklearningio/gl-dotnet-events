@@ -12,7 +12,7 @@
     {
         private readonly InMemoryQueueOptions queueOptions;
         private readonly Queue<EventBase> queue = new Queue<EventBase>();
-        public IQueueStorageInMemory storedQueue;
+        private IQueueStorageInMemory storedQueue;
 
         public string Name => this.queueOptions.Name;
 
