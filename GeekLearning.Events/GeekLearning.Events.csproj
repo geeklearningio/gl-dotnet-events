@@ -1,7 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <Description>A .NET Core Eventing abstractions with Azure provider</Description>
+    <VersionPrefix>0.0.1</VersionPrefix>
+    <Authors>Geek Learning;Ronan Janvresse;Arnaud Auroux;Adrien Siffermann;Cyprien Autexier</Authors>
     <TargetFramework>netstandard2</TargetFramework>
+    <AssemblyName>GeekLearning.Events</AssemblyName>
+    <PackageId>GeekLearning.Events</PackageId>
   </PropertyGroup>
 
   <ItemGroup>

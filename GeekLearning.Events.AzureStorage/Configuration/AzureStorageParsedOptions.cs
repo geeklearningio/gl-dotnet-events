@@ -37,7 +37,7 @@
                 if (!this.ConnectionStrings.ContainsKey(queueOptions.ConnectionStringName))
                 {
                     throw new Exceptions.BadQueueConfiguration(
-                        queueOptions.QueueName,
+                        queueOptions.Name,
                         $"The ConnectionString named '{queueOptions.ConnectionStringName}' cannot be found. Did you call AddEvent with the configuration root ?");
                 }
 

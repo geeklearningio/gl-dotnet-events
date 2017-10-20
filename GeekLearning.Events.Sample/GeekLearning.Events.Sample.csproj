@@ -3,6 +3,10 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <PackageTargetFallback>$(PackageTargetFallback);portable-net45+win8+wp8+wpa81;</PackageTargetFallback>
+	<PreserveCompilationContext>true</PreserveCompilationContext>
+    <AssemblyName>GeekLearning.Events.Sample</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <PackageId>GeekLearning.Events.Sample</PackageId>
   </PropertyGroup>
 
   <ItemGroup>
