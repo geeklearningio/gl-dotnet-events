@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\GeekLearning.Events.InMemory\GeekLearning.Events.InMemory.csproj" />
+    <ProjectReference Include="..\GeekLearning.Events.AzureStorage\GeekLearning.Events.AzureStorage.csproj" />
   </ItemGroup>
   
   <ItemGroup>
