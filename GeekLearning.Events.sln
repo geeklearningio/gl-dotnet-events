@@ -5,19 +5,23 @@ VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1A754E40-F164-4442-B51E-160CF2A1F34E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeekLearning.Events", "GeekLearning.Events\GeekLearning.Events.csproj", "{BBEE98EB-02B4-4110-897E-9D18A93658BD}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeekLearning.Events.AzureStorage", "GeekLearning.Events.AzureStorage\GeekLearning.Events.AzureStorage.csproj", "{1D5AE94A-9236-437C-97F1-4674ED6C9D70}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeekLearning.Events.InMemory", "GeekLearning.Events.InMemory\GeekLearning.Events.InMemory.csproj", "{3213EBAB-980A-4D02-A1DB-99CEB73021FA}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeekLearning.Events.Sample", "GeekLearning.Events.Sample\GeekLearning.Events.Sample.csproj", "{23E195B9-C27D-46AF-9BA1-FC83A804867D}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E01693EF-6658-4FB9-8849-337A4665B6CD}"
 	ProjectSection(SolutionItems) = preProject
+		GitVersion.yml = GitVersion.yml
 		LICENSE.txt = LICENSE.txt
+		NuGet.Config = NuGet.Config
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeekLearning.Events", "src\GeekLearning.Events\GeekLearning.Events.csproj", "{7FF1CEA1-C9BC-4EFD-A7DC-9D23C8381E0B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeekLearning.Events.AzureStorage", "src\GeekLearning.Events.AzureStorage\GeekLearning.Events.AzureStorage.csproj", "{2E9E1DEF-EC2F-4579-8132-3E739E6C8AED}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeekLearning.Events.InMemory", "src\GeekLearning.Events.InMemory\GeekLearning.Events.InMemory.csproj", "{40A0CD11-E804-45DB-B7B5-5D58D37D28A6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{31AED30E-FF14-4D84-AB6E-61DD8889E50C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeekLearning.Events.Sample", "samples\GeekLearning.Events.Sample\GeekLearning.Events.Sample.csproj", "{D5DAA9A0-CD8D-473D-8FDF-0350A7EEEE78}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,31 +29,31 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BBEE98EB-02B4-4110-897E-9D18A93658BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BBEE98EB-02B4-4110-897E-9D18A93658BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BBEE98EB-02B4-4110-897E-9D18A93658BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BBEE98EB-02B4-4110-897E-9D18A93658BD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1D5AE94A-9236-437C-97F1-4674ED6C9D70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1D5AE94A-9236-437C-97F1-4674ED6C9D70}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1D5AE94A-9236-437C-97F1-4674ED6C9D70}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1D5AE94A-9236-437C-97F1-4674ED6C9D70}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3213EBAB-980A-4D02-A1DB-99CEB73021FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3213EBAB-980A-4D02-A1DB-99CEB73021FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3213EBAB-980A-4D02-A1DB-99CEB73021FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3213EBAB-980A-4D02-A1DB-99CEB73021FA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{23E195B9-C27D-46AF-9BA1-FC83A804867D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{23E195B9-C27D-46AF-9BA1-FC83A804867D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{23E195B9-C27D-46AF-9BA1-FC83A804867D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{23E195B9-C27D-46AF-9BA1-FC83A804867D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FF1CEA1-C9BC-4EFD-A7DC-9D23C8381E0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FF1CEA1-C9BC-4EFD-A7DC-9D23C8381E0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FF1CEA1-C9BC-4EFD-A7DC-9D23C8381E0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FF1CEA1-C9BC-4EFD-A7DC-9D23C8381E0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E9E1DEF-EC2F-4579-8132-3E739E6C8AED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E9E1DEF-EC2F-4579-8132-3E739E6C8AED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E9E1DEF-EC2F-4579-8132-3E739E6C8AED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E9E1DEF-EC2F-4579-8132-3E739E6C8AED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40A0CD11-E804-45DB-B7B5-5D58D37D28A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40A0CD11-E804-45DB-B7B5-5D58D37D28A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40A0CD11-E804-45DB-B7B5-5D58D37D28A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40A0CD11-E804-45DB-B7B5-5D58D37D28A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5DAA9A0-CD8D-473D-8FDF-0350A7EEEE78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5DAA9A0-CD8D-473D-8FDF-0350A7EEEE78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5DAA9A0-CD8D-473D-8FDF-0350A7EEEE78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5DAA9A0-CD8D-473D-8FDF-0350A7EEEE78}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{BBEE98EB-02B4-4110-897E-9D18A93658BD} = {1A754E40-F164-4442-B51E-160CF2A1F34E}
-		{1D5AE94A-9236-437C-97F1-4674ED6C9D70} = {1A754E40-F164-4442-B51E-160CF2A1F34E}
-		{3213EBAB-980A-4D02-A1DB-99CEB73021FA} = {1A754E40-F164-4442-B51E-160CF2A1F34E}
-		{23E195B9-C27D-46AF-9BA1-FC83A804867D} = {1A754E40-F164-4442-B51E-160CF2A1F34E}
+		{7FF1CEA1-C9BC-4EFD-A7DC-9D23C8381E0B} = {1A754E40-F164-4442-B51E-160CF2A1F34E}
+		{2E9E1DEF-EC2F-4579-8132-3E739E6C8AED} = {1A754E40-F164-4442-B51E-160CF2A1F34E}
+		{40A0CD11-E804-45DB-B7B5-5D58D37D28A6} = {1A754E40-F164-4442-B51E-160CF2A1F34E}
+		{D5DAA9A0-CD8D-473D-8FDF-0350A7EEEE78} = {31AED30E-FF14-4D84-AB6E-61DD8889E50C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E09B2C30-A610-4720-BFA8-DB61F944C041}
