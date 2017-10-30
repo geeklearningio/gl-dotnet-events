@@ -31,7 +31,7 @@ namespace GeekLearning.Events.Sample
         {
             // Add framework services.
             services.AddMvc();
-            services.AddEvent(this.Configuration.GetSection("Event"))
+            services.AddEvent(this.Configuration)
                 .AddInMemoryQueue()
                 .AddAzureStorageQueue();
         }
