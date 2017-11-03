@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.12
+VisualStudioVersion = 15.0.27004.2006
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1A754E40-F164-4442-B51E-160CF2A1F34E}"
 EndProject
@@ -22,8 +22,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{31AED30E-FF14-4D84-AB6E-61DD8889E50C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeekLearning.Events.Sample", "samples\GeekLearning.Events.Sample\GeekLearning.Events.Sample.csproj", "{D5DAA9A0-CD8D-473D-8FDF-0350A7EEEE78}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeekLearning.Events.AzureStorageRecever", "GeekLearning.Events.AzureStorageRecever\GeekLearning.Events.AzureStorageRecever.csproj", "{F329A27A-63F6-44A3-8C65-756784227402}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,10 +45,6 @@ Global
 		{D5DAA9A0-CD8D-473D-8FDF-0350A7EEEE78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5DAA9A0-CD8D-473D-8FDF-0350A7EEEE78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5DAA9A0-CD8D-473D-8FDF-0350A7EEEE78}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F329A27A-63F6-44A3-8C65-756784227402}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F329A27A-63F6-44A3-8C65-756784227402}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F329A27A-63F6-44A3-8C65-756784227402}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F329A27A-63F6-44A3-8C65-756784227402}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,7 +54,6 @@ Global
 		{2E9E1DEF-EC2F-4579-8132-3E739E6C8AED} = {1A754E40-F164-4442-B51E-160CF2A1F34E}
 		{40A0CD11-E804-45DB-B7B5-5D58D37D28A6} = {1A754E40-F164-4442-B51E-160CF2A1F34E}
 		{D5DAA9A0-CD8D-473D-8FDF-0350A7EEEE78} = {31AED30E-FF14-4D84-AB6E-61DD8889E50C}
-		{F329A27A-63F6-44A3-8C65-756784227402} = {1A754E40-F164-4442-B51E-160CF2A1F34E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E09B2C30-A610-4720-BFA8-DB61F944C041}
