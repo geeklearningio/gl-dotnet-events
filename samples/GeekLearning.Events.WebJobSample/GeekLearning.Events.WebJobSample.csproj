@@ -166,7 +166,7 @@
       <Project>{ad7d2490-4c33-4500-b3f7-6c7119c183fb}</Project>
       <Name>GeekLearning.Events.SampleEventModels</Name>
     </ProjectReference>
-    <ProjectReference Include="..\src\GeekLearning.Events\GeekLearning.Events.csproj">
+    <ProjectReference Include="..\..\src\GeekLearning.Events\GeekLearning.Events.csproj">
       <Project>{7ff1cea1-c9bc-4efd-a7dc-9d23c8381e0b}</Project>
       <Name>GeekLearning.Events</Name>
     </ProjectReference>

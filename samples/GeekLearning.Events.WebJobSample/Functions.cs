@@ -1,17 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.Azure.WebJobs;
-using GeekLearning.Events.Model;
-using GeekLearning.Events.SampleEventsModels.Models;
-using Microsoft.Extensions.DependencyInjection;
-using Newtonsoft.Json;
-
-namespace GeekLearning.Events.WebJobSample
+﻿namespace GeekLearning.Events.WebJobSample
 {
+    using System;
+    using System.Collections.Generic;
+    using System.IO;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+    using Microsoft.Azure.WebJobs;
+    using GeekLearning.Events.Model;
+    using GeekLearning.Events.SampleEventsModels.Models;
+    using Microsoft.Extensions.DependencyInjection;
+    using Newtonsoft.Json;
+
     public class Functions
     {
         private readonly IEventReceiver eventReceiver;
@@ -31,7 +31,6 @@ namespace GeekLearning.Events.WebJobSample
             var deserialized = test.Deserialize<EventBaseSample>(jsonreader);
 
             Console.WriteLine(message);
-            Console.WriteLine("ICI");
             //this.eventReceiver.ReceiveAsync(message);
         }
     }

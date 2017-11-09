@@ -1,11 +1,7 @@
-﻿using GeekLearning.Events.Model;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace GeekLearning.Events.Sample.Models
+﻿namespace GeekLearning.Events.SampleEventsModels.Models
 {
+    using GeekLearning.Events.Model;
+
     public class EventBaseSample : EventBase
     {
         public EventBaseSample()

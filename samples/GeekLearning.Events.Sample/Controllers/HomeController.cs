@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using GeekLearning.Events.Sample.Models;
+using GeekLearning.Events.SampleEventsModels.Models;
 
 namespace GeekLearning.Events.Sample.Controllers
 {
@@ -20,7 +20,7 @@ namespace GeekLearning.Events.Sample.Controllers
 
         public IActionResult Index()
         {
-            this.queue.QueueEvent(new EventTest("Swag","TEST EVENT"));
+            this.queue.QueueEvent(new EventTest("Swag"));
             this.queue.CommitAsync();
             /*this.queueAzure.QueueEvent(new EventTest("Azure"));
             this.queueAzure.CommitAsync();*/

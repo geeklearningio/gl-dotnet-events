@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
-using GeekLearning.Events.Model;
-using GeekLearning.Events.SampleEventsModels.Models;
-
-namespace GeekLearning.Events.SampleEventModels.Queuer
+﻿namespace GeekLearning.Events.SampleEventModels.Queuer
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+    using System.Threading.Tasks;
+    using GeekLearning.Events.Model;
+    using GeekLearning.Events.SampleEventsModels.Models;
+
     public class TestQueuer : EventQueuerBase, IEventQueuer
     {
         private const string queueName = "queue1";

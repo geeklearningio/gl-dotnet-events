@@ -1,7 +1,6 @@
-﻿using GeekLearning.Events.Model;
-
-namespace GeekLearning.Events.Sample.Models
+﻿namespace GeekLearning.Events.SampleEventsModels.Models
 {
+
     public class EventAdvanced : EventBaseSample
     {
         public EventAdvanced()

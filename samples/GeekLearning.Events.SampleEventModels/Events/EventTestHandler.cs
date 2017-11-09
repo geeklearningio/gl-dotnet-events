@@ -1,8 +1,8 @@
-﻿using GeekLearning.Events.SampleEventsModels.Models;
-using System;
-
-namespace GeekLearning.Events.SampleEventsModels.Events
+﻿namespace GeekLearning.Events.SampleEventsModels.Events
 {
+    using GeekLearning.Events.SampleEventsModels.Models;
+    using System;
+
     public class EventTestHandler : IEventHandler<EventTest>
     {
         public void ExecuteAsync(EventTest evenBase)

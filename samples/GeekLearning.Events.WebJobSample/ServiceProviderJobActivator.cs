@@ -1,18 +1,18 @@
-﻿using Microsoft.Azure.WebJobs.Host;
-using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GeekLearning.Events.WebJobSample
+﻿namespace GeekLearning.Events.WebJobSample
 {
+    using Microsoft.Azure.WebJobs.Host;
+    using Microsoft.Extensions.DependencyInjection;
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+
     public class ServiceProviderJobActivator : IJobActivator
     {
         private readonly IServiceProvider serviceProvider;
 
-        public ServiceProviderJobActivator (IServiceProvider serviceProvider)
+        public ServiceProviderJobActivator(IServiceProvider serviceProvider)
         {
             this.serviceProvider = serviceProvider;
         }
