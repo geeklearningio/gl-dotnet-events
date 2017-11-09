@@ -45,5 +45,10 @@
                 .AddEvent();
         }
 
+        public static void AddEventReceiver (this IServiceCollection services)
+        {
+            services.AddScoped<IEventReceiver, EventReceiver>();
+        }
+
     }
 }

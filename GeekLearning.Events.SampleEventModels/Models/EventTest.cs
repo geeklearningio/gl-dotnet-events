@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace GeekLearning.Events.Sample.Models
+namespace GeekLearning.Events.SampleEventsModels.Models
 {
     public class EventTest : EventBaseSample
     {
@@ -13,12 +13,10 @@ namespace GeekLearning.Events.Sample.Models
 
         }
 
-        public string Message { get; set; }
-
-        public EventTest(string name, string msg)
+        public EventTest(string name)
             : base($"{name}")
         {
-            this.Message = msg;
+
         }
     }
 }

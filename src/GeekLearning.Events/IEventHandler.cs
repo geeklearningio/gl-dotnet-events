@@ -5,6 +5,6 @@
 
     public interface IEventHandler<TEvent> where TEvent : EventBase
     {
-        Task<EventBase> ExecuteAsync(TEvent evenBase);
+        void ExecuteAsync(TEvent evenBase);
     }
 }

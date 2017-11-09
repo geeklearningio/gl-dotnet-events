@@ -6,19 +6,16 @@ using System.Threading.Tasks;
 
 namespace GeekLearning.Events.Sample.Models
 {
-    public class EventTest : EventBaseSample
+    public class EventBaseSample : EventBase
     {
-        public EventTest()
+        public EventBaseSample()
         {
 
         }
 
-        public string Message { get; set; }
-
-        public EventTest(string name, string msg)
-            : base($"{name}")
+        public EventBaseSample (string name) : base($"{name}")
         {
-            this.Message = msg;
+
         }
     }
 }

@@ -34,6 +34,8 @@ namespace GeekLearning.Events.Sample
             services.AddEvent(this.Configuration)
                 .AddInMemoryQueue()
                 .AddAzureStorageQueue();
+            services.AddEventReceiver();
+            services.AddEventsHandlers();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

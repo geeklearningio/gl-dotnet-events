@@ -20,7 +20,7 @@ namespace GeekLearning.Events.Sample.Controllers
 
         public IActionResult Index()
         {
-            this.queue.QueueEvent(new EventTest("Swag"));
+            this.queue.QueueEvent(new EventTest("Swag","TEST EVENT"));
             this.queue.CommitAsync();
             /*this.queueAzure.QueueEvent(new EventTest("Azure"));
             this.queueAzure.CommitAsync();*/
