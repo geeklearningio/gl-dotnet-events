@@ -1,12 +1,8 @@
-﻿namespace GeekLearning.Events.WebJobSample
+﻿namespace GeekLearning.Events.SampleWebJob
 {
     using Microsoft.Azure.WebJobs.Host;
     using Microsoft.Extensions.DependencyInjection;
     using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
 
     public class ServiceProviderJobActivator : IJobActivator
     {

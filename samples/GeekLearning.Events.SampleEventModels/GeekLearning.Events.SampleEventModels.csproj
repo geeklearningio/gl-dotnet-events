@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\GeekLearning.Events\GeekLearning.Events.csproj" />
-    <ProjectReference Include="..\src\GeekLearning.Events\GeekLearning.Events.csproj" />
   </ItemGroup>
 
 </Project>

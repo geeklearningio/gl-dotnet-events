@@ -1,13 +1,8 @@
-﻿namespace GeekLearning.Events.WebJobSample
+﻿namespace GeekLearning.Events.SampleWebJob
 {
     using System;
-    using System.Collections.Generic;
     using System.IO;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
     using Microsoft.Azure.WebJobs;
-    using GeekLearning.Events.Model;
     using GeekLearning.Events.SampleEventsModels.Models;
     using Microsoft.Extensions.DependencyInjection;
     using Newtonsoft.Json;
@@ -17,7 +12,7 @@
         private readonly IEventReceiver eventReceiver;
         private readonly IServiceScope serviceScope;
 
-        public Functions (IServiceScope serviceScope, IEventReceiver eventReceiver)
+        public Functions(IServiceScope serviceScope, IEventReceiver eventReceiver)
         {
             this.serviceScope = serviceScope;
             this.eventReceiver = eventReceiver;

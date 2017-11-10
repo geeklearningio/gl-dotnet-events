@@ -1,8 +1,8 @@
 ﻿namespace GeekLearning.Events.Sample
 {
-    using GeekLearning.Events.Sample.Events;
-    using GeekLearning.Events.Sample.Models;
     using GeekLearning.Events.SampleEventModels.Queuer;
+    using GeekLearning.Events.SampleEventsModels.Events;
+    using GeekLearning.Events.SampleEventsModels.Models;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.DependencyInjection.Extensions;
 
