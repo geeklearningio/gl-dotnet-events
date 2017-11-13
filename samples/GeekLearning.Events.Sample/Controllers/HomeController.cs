@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using GeekLearning.Events.Sample.Models;
+using GeekLearning.Events.SampleEventsModels.Models;
 
 namespace GeekLearning.Events.Sample.Controllers
 {
@@ -15,15 +15,15 @@ namespace GeekLearning.Events.Sample.Controllers
         public HomeController (IEventFactory factory)
         {
             this.queue = factory.GetQueuer("queue1");
-            this.queueAzure = factory.GetQueuer("queue2");
+            //this.queueAzure = factory.GetQueuer("queue2");
         }
 
         public IActionResult Index()
         {
             this.queue.QueueEvent(new EventTest("Swag"));
             this.queue.CommitAsync();
-            this.queueAzure.QueueEvent(new EventTest("Azure"));
-            this.queueAzure.CommitAsync();
+            /*this.queueAzure.QueueEvent(new EventTest("Azure"));
+            this.queueAzure.CommitAsync();*/
             return View();
         }
 
