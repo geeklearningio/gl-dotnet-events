@@ -52,9 +52,9 @@
             await Task.WhenAll(addMessagesTaskList);
         }
 
-        public void Dispose()
+        public async void Dispose()
         {
-            this.CommitAsync();
+            await this.CommitAsync();
         }
 
         public IEnumerable<EventBase> flush()
