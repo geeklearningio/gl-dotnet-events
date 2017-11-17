@@ -42,9 +42,9 @@
             return Task.CompletedTask;
         }
 
-        public void Dispose()
+        public async void Dispose()
         {
-            this.CommitAsync();
+            await this.CommitAsync();
         }
 
         public IEnumerable<EventBase> flush()

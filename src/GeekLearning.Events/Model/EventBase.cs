@@ -13,7 +13,7 @@
             this.Key = key;
         }
 
-        public string Key { get; set; }
+        public abstract string Key { get; set; }
 
         public bool Equals(EventBase other)
         {
