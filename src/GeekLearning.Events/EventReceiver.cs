@@ -22,7 +22,7 @@
 
             var getEventHadler = this.serviceProvider.GetService(queryType);
 
-            await (Task<EventBase>)queryType.GetMethod("ExecuteAsync")
+            await (Task)queryType.GetMethod("ExecuteAsync")
                 .Invoke(getEventHadler, new object[] { eventBase });
         }
     }
