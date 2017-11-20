@@ -4,16 +4,12 @@
 
     public abstract class EventBase : IEquatable<EventBase>
     {
+
         public EventBase()
         {
         }
 
-        public EventBase(string key)
-        {
-            this.Key = key;
-        }
-
-        public abstract string Key { get; set; }
+        public abstract string Key { get; }
 
         public bool Equals(EventBase other)
         {
