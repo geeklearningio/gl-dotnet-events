@@ -1,8 +1,6 @@
 ﻿namespace GeekLearning.Events.Internal
 {
-    using System;
     using System.Collections.Generic;
-    using System.Text;
     using GeekLearning.Events.Configuration.Queue;
     using Microsoft.Extensions.Options;
     using System.Linq;
@@ -11,7 +9,7 @@
     class EventFactory : IEventFactory
     {
         private EventOptions options;
-        private IReadOnlyDictionary<string, IEventProvider> queueProviders; 
+        private IReadOnlyDictionary<string, IEventProvider> queueProviders;
 
         public EventFactory(IEnumerable<IEventProvider> queueProviders, IOptions<EventOptions> options)
         {
@@ -32,7 +30,7 @@
         public bool TryGetQueuer(string queueName, out IEventQueuer queuer)
         {
             var configuration = this.options.GetQueueConfiguration(queueName, throwIfNotFound: false);
-            if(configuration != null)
+            if (configuration != null)
             {
                 var provider = this.GetProvider(configuration, throwIfNotFound: false);
                 if (provider != null)
@@ -49,10 +47,10 @@
         public bool TryGetQueuer(string queueName, out IEventQueuer queuer, string providerName)
         {
             var configuration = this.options.GetQueueConfiguration(queueName, throwIfNotFound: false);
-            if(configuration != null)
+            if (configuration != null)
             {
                 var provider = this.GetProvider(configuration, throwIfNotFound: false);
-                if(provider != null && provider.Name == providerName)
+                if (provider != null && provider.Name == providerName)
                 {
                     queuer = provider.BuildQueueProvider(queueName);
                     return true;
@@ -62,7 +60,7 @@
             queuer = null;
             return false;
         }
-        
+
         private IEventProvider GetProvider(IQueueOptions configuration, bool throwIfNotFound = true)
         {
             string providerTypeName = null;
@@ -70,10 +68,10 @@
             {
                 providerTypeName = configuration.ProviderType;
             }
-            else if(!string.IsNullOrEmpty(configuration.ProviderName))
+            else if (!string.IsNullOrEmpty(configuration.ProviderName))
             {
                 this.options.ParsedProviderInstances.TryGetValue(configuration.ProviderName, out var providersInstanceOptions);
-                if(providersInstanceOptions != null)
+                if (providersInstanceOptions != null)
                 {
                     providerTypeName = providersInstanceOptions.Type;
                 }
@@ -93,7 +91,7 @@
             }
 
             this.queueProviders.TryGetValue(providerTypeName, out var provider);
-            if(provider == null && throwIfNotFound)
+            if (provider == null && throwIfNotFound)
             {
                 throw new Exceptions.ProviderNotFound(providerTypeName);
             }

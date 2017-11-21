@@ -26,12 +26,12 @@
 
         public IEventQueuer BuildQueueProvider(string queueName, IQueueOptions queueOptions)
         {
-            if(queueOptions.ProviderType != this.Name)
+            if (queueOptions.ProviderType != this.Name)
             {
                 throw new Exceptions.BadQueueProvider(this.Name, queueName);
             }
 
-            return this.BuildQueueInternal(queueName, queueOptions.ParseQueueOptions<TParsedOptions,TInstanceOptions,TQueueOptions>(options));
+            return this.BuildQueueInternal(queueName, queueOptions.ParseQueueOptions<TParsedOptions, TInstanceOptions, TQueueOptions>(options));
         }
 
         protected abstract IEventQueuer BuildQueueInternal(string queueName, TQueueOptions queueOptions);

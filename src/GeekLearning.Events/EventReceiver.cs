@@ -20,10 +20,10 @@
             var queryType = typeof(IEventHandler<>)
                 .MakeGenericType(new Type[] { eventBase.GetType() });
 
-            var getEventHadler = this.serviceProvider.GetService(queryType);
+            var getEventHandler = this.serviceProvider.GetService(queryType);
 
             await (Task)queryType.GetMethod("ExecuteAsync")
-                .Invoke(getEventHadler, new object[] { eventBase });
+                .Invoke(getEventHandler, new object[] { eventBase });
         }
     }
 }

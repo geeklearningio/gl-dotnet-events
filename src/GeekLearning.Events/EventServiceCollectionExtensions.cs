@@ -4,9 +4,7 @@
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.DependencyInjection.Extensions;
-    using System;
     using System.Collections.Generic;
-    using System.Text;
 
     public static class EventServiceCollectionExtensions
     {
@@ -45,7 +43,7 @@
                 .AddEvent();
         }
 
-        public static void AddEventReceiver (this IServiceCollection services)
+        public static void AddEventReceiver(this IServiceCollection services)
         {
             services.AddScoped<IEventReceiver, EventReceiver>();
         }
