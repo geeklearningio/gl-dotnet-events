@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>A .NET Core Eventing abstractions with Azure provider</Description>
+    <VersionPrefix>0.0.1</VersionPrefix>
+    <Authors>Geek Learning;Ronan Janvresse;Arnaud Auroux;Adrien Siffermann</Authors>
+    <TargetFramework>netstandard2</TargetFramework>
+    <AssemblyName>GeekLearning.Events.AzureStorage</AssemblyName>
+    <PackageId>GeekLearning.Events.AzureStorage</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="WindowsAzure.Storage" Version="8.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GeekLearning.Events\GeekLearning.Events.csproj" />
+  </ItemGroup>
+
+</Project>
