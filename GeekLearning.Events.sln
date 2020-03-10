@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26730.12
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1A754E40-F164-4442-B51E-160CF2A1F34E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E01693EF-6658-4FB9-8849-337A4665B6CD}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "items", "items", "{E01693EF-6658-4FB9-8849-337A4665B6CD}"
 	ProjectSection(SolutionItems) = preProject
 		GitVersion.yml = GitVersion.yml
 		LICENSE.txt = LICENSE.txt

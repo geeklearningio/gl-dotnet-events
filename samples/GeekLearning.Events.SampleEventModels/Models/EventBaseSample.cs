@@ -9,9 +9,11 @@
 
         }
 
-        public EventBaseSample (string name) : base($"{name}")
+        public EventBaseSample(string name)
         {
-
+            this.Key = name;
         }
+
+        public override string Key { get; }
     }
 }

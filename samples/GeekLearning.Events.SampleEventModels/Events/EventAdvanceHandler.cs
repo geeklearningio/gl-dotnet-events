@@ -2,12 +2,15 @@
 {
     using GeekLearning.Events.SampleEventsModels.Models;
     using System;
+    using System.Threading.Tasks;
 
     public class EventAdvanceHandler : IEventHandler<EventAdvanced>
     {
-        public void ExecuteAsync(EventAdvanced evenBase)
+        public Task ExecuteAsync(EventAdvanced evenBase)
         {
             Console.WriteLine("ADVANCED Event");
+
+            return Task.CompletedTask;
         }
     }
 }
